@@ -1,19 +1,23 @@
 {
   "name": "react-apollo-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple test application using React, Apollo and a GraphQL API",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html -p 8080 --open",
-    "start": "live-server dist",
-    "build": "parcel build src/index.html --detailed-report --no-source-maps --experimental-scope-hoisting"
+    "dev": "concurrently 'parcel src/index.html -p 8080 --open' 'npm run api'",
+    "start": "concurrently 'live-server dist' 'npm run api'",
+    "build": "parcel build src/index.html --detailed-report --no-source-maps --experimental-scope-hoisting",
+    "api": "nodemon api/app.js"
   },
-  "author": "",
+  "author": "Michael Tugby",
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^1.4.0",
     "@types/prop-types": "^15.5.3",
     "apollo-client-preset": "^1.0.8",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
     "live-server": "^1.2.0",
@@ -31,8 +35,10 @@
     "@types/react-loadable": "^5.4.0",
     "@types/react-router": "^4.0.28",
     "@types/react-router-dom": "^4.2.7",
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.2",
     "parcel-bundler": "^1.9.7",
     "parcel-plugin-typescript": "^1.0.0",
-    "typescript": "^3.0.0-dev.20180606"
+    "typescript": "^2.9.2"
   }
 }

@@ -4,13 +4,7 @@ Just a simple test application using React and Apollo to communicate with a Grap
 
 ## Usage
 
-1. Startup the GraphQL server in one process:
-```sh
-cd api
-npm start
-```
-
-2. Startup the Parcel dev server in a seperate process:
+1. Startup the GraphQL server and the Parcel dev server:
 ```sh
 npm run dev
 ```
