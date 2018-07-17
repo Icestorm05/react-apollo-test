@@ -11,6 +11,10 @@
   },
   "author": "Michael Tugby",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Icestorm05/react-apollo-test.git"
+  },
   "dependencies": {
     "@material-ui/core": "^1.4.0",
     "apollo-client-preset": "^1.0.8",
