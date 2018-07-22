@@ -1,8 +1,8 @@
-### React Apollo Test
+## React Apollo Test
 
 Just a simple test application using React and Apollo to communicate with a GraphQL server.
 
-## Usage
+### Usage
 
 Startup the GraphQL server and the Parcel dev server:
 ```sh

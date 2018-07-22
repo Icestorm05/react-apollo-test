@@ -11,16 +11,18 @@
   },
   "author": "Michael Tugby",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Icestorm05/react-apollo-test.git"
+  },
   "dependencies": {
     "@material-ui/core": "^1.4.0",
-    "@types/prop-types": "^15.5.3",
     "apollo-client-preset": "^1.0.8",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
-    "live-server": "^1.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-apollo": "^2.1.9",
@@ -30,12 +32,14 @@
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
+    "@types/prop-types": "^15.5.3",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
     "@types/react-loadable": "^5.4.0",
     "@types/react-router": "^4.0.28",
     "@types/react-router-dom": "^4.2.7",
     "concurrently": "^3.6.0",
+    "live-server": "^1.2.0",
     "nodemon": "^1.18.2",
     "parcel-bundler": "^1.9.7",
     "parcel-plugin-typescript": "^1.0.0",
